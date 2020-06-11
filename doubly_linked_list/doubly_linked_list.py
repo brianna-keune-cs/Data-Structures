@@ -80,7 +80,7 @@ class DoublyLinkedList:
             return None
         removed_node = self.head.value
         if self.head is self.tail:
-            self.head, self.tail = None, None
+            self.set_head_and_tail(None)
         else:
             self.head = self.head.next
 
@@ -112,7 +112,7 @@ class DoublyLinkedList:
             return None
         removed_node = self.tail.value
         if self.head is self.tail:
-            self.head, self.tail = None, None
+            self.set_head_and_tail(None)
         else:
             self.tail = self.tail.prev
 
